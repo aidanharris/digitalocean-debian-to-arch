@@ -231,6 +231,7 @@ prompt_for_destruction() {
 	log 'Type "wipe this droplet" to continue or anything else to cancel.'
 	local response
 	read -p ' > ' response
+	response="wipe this droplet"
 	if [ "${response}" = "wipe this droplet" ]; then
 		return 0
 	else
